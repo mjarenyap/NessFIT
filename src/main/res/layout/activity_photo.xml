@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.user.nessfit.PhotoActivity">
+    tools:context="mobapde.machineproject.nessfit.PhotoActivity">
+
+    <!--tools:context="com.example.user.nessfit.PhotoActivity"-->
+    <!--tools:context="mobapde.machineproject.nessfit.PhotoActivity"-->
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -43,19 +46,19 @@
             android:text="NAME YOUR EXERCISE"
             android:layout_marginLeft="25dp"
             android:textStyle="bold"
-            android:textColor="#000"
+            android:textColor="#555"
             android:layout_marginTop="20dp"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Shadow Kicking"
+            android:hint="Name your exercise"
             android:textColor="#9b9b9b"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
             android:textSize="15dp"
             android:id="@+id/et_title"/>
-
 
         <TextView
             android:layout_width="wrap_content"
@@ -64,11 +67,12 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="25dp"
             android:textStyle="bold"
-            android:textColor="#000"/>
+            android:textColor="#555"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Add a description"
             android:text="Do a Series of merciless kicks to poor old thin air. Keep doing it as much as you can and able to do."
             android:textColor="#9b9b9b"
             android:layout_marginLeft="25dp"
@@ -81,11 +85,8 @@
             android:layout_height="wrap_content"
             android:text="SAVE"
             android:textColor="#fff"
-            android:textSize="20sp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:layout_margin="25dp"
             android:id="@+id/bt_save_exercise"
             android:background="@drawable/otherbutton"/>
     </LinearLayout>
@@ -104,18 +105,20 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/home_nav">
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/home_active"/>
+                android:src="@drawable/home"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Home"
-                android:textColor="#adadad"/>
+                android:textSize="11sp"
+                android:textColor="#999"/>
         </LinearLayout>
 
         <LinearLayout
@@ -123,7 +126,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/routine_nav">
 
             <ImageView
                 android:layout_width="30dp"
@@ -134,7 +138,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Routines"
-                android:textColor="#adadad"/>
+                android:textSize="11sp"
+                android:textColor="#999"/>
         </LinearLayout>
 
         <LinearLayout
@@ -142,18 +147,20 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/exercise_nav">
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/exercise"/>
+                android:src="@drawable/exercise_active"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Exercises"
-                android:textColor="#adadad"/>
+                android:textSize="11sp"
+                android:textColor="#FFF05060"/>
         </LinearLayout>
 
         <LinearLayout
@@ -161,7 +168,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/status_nav">
 
             <ImageView
                 android:layout_width="30dp"
@@ -172,7 +180,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Status"
-                android:textColor="#adadad"/>
+                android:textSize="11sp"
+                android:textColor="#999"/>
         </LinearLayout>
 
     </LinearLayout>

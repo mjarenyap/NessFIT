@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.user.nessfit.ChangeLevelActivity">
+    tools:context="mobapde.machineproject.nessfit.ChangeLevelActivity">
+
+    <!--tools:context="com.example.user.nessfit.ChangeLevelActivity"-->
+    <!--tools:context="mobapde.machineproject.nessfit.ChangeLevelActivity"-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -106,18 +109,20 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/home_nav">
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/home_active"/>
+                android:src="@drawable/home"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Home"
-                android:textColor="#adadad"/>
+                android:textSize="11sp"
+                android:textColor="#999"/>
         </LinearLayout>
 
         <LinearLayout
@@ -125,7 +130,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/routine_nav">
 
             <ImageView
                 android:layout_width="30dp"
@@ -136,7 +142,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Routines"
-                android:textColor="#adadad"/>
+                android:textSize="11sp"
+                android:textColor="#999"/>
         </LinearLayout>
 
         <LinearLayout
@@ -144,7 +151,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/exercise_nav">
 
             <ImageView
                 android:layout_width="30dp"
@@ -155,7 +163,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Exercises"
-                android:textColor="#adadad"/>
+                android:textSize="11sp"
+                android:textColor="#999"/>
         </LinearLayout>
 
         <LinearLayout
@@ -163,18 +172,20 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/status_nav">
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/barchart"/>
+                android:src="@drawable/barchart_active"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Status"
-                android:textColor="#adadad"/>
+                android:textSize="11sp"
+                android:textColor="#f05060"/>
         </LinearLayout>
 
     </LinearLayout>
