@@ -4,27 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.user.nessfit.StatusActivity"
+    tools:context="mobapde.machineproject.nessfit.StatusActivity"
     android:orientation="vertical">
+
+    <!--tools:context="com.example.user.nessfit.StatusActivity"-->
+    <!--tools:context="mobapde.machineproject.nessfit.StatusActivity"-->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_weight="10"
-        android:layout_marginTop="50dp">
+        android:layout_margin="25dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:layout_marginBottom="30dp">
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Name"
-                android:layout_marginLeft="20dp"
                 android:textSize="20sp"
                 android:layout_weight="2"/>
 
@@ -33,6 +36,7 @@
                 android:layout_height="wrap_content"
                 android:text="Mike Jaren Yap"
                 android:textAlignment="textEnd"
+                android:gravity="end"
                 android:layout_weight="3"
                 android:textSize="15sp"
                 android:id="@+id/tv_name"/>
@@ -40,7 +44,6 @@
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
                 android:src="@drawable/right_arrow"
                 android:id="@+id/iv_name"/>
 
@@ -50,13 +53,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:layout_marginBottom="30dp">
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Training Level"
-                android:layout_marginLeft="20dp"
                 android:layout_weight="2"
                 android:textSize="20sp"/>
 
@@ -65,6 +68,7 @@
                 android:layout_height="wrap_content"
                 android:text="Beginner"
                 android:textAlignment="textEnd"
+                android:gravity="end"
                 android:layout_weight="3"
                 android:textSize="15sp"
                 android:id="@+id/tv_level"/>
@@ -72,7 +76,6 @@
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
                 android:src="@drawable/right_arrow"
                 android:id="@+id/iv_level"/>
 
@@ -82,13 +85,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:layout_marginBottom="30dp">
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Weight"
-                android:layout_marginLeft="20dp"
                 android:layout_weight="2"
                 android:textSize="20sp"/>
 
@@ -97,6 +100,7 @@
                 android:layout_height="wrap_content"
                 android:text="118lbs"
                 android:textAlignment="textEnd"
+                android:gravity="end"
                 android:layout_weight="3"
                 android:textSize="15sp"
                 android:id="@+id/tv_weight"/>
@@ -104,7 +108,6 @@
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
                 android:src="@drawable/right_arrow"
                 android:id="@+id/iv_weight"/>
 
@@ -114,14 +117,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:layout_marginBottom="30dp">
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Notifications"
                 android:layout_weight="2"
-                android:layout_marginLeft="20dp"
                 android:textSize="20sp"/>
 
             <TextView
@@ -130,13 +133,13 @@
                 android:text="Off"
                 android:layout_weight="3"
                 android:textAlignment="textEnd"
+                android:gravity="end"
                 android:textSize="15sp"
                 android:id="@+id/tv_notif"/>
 
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
                 android:src="@drawable/right_arrow"
                 android:id="@+id/iv_notif"/>
 
@@ -146,13 +149,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:layout_marginBottom="30dp">
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Gender"
-                android:layout_marginLeft="20dp"
                 android:layout_weight="2"
                 android:textSize="20sp"/>
 
@@ -162,13 +165,13 @@
                 android:text="Male"
                 android:layout_weight="3"
                 android:textAlignment="textEnd"
+                android:gravity="end"
                 android:textSize="15sp"
                 android:id="@+id/tv_gender"/>
 
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
                 android:src="@drawable/right_arrow"
                 android:id="@+id/iv_gender"/>
 
@@ -189,18 +192,20 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/home_nav">
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/home_active"/>
+                android:src="@drawable/home"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Home"
-                android:textColor="#adadad"/>
+                android:textSize="11sp"
+                android:textColor="#999"/>
         </LinearLayout>
 
         <LinearLayout
@@ -208,7 +213,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/routine_nav">
 
             <ImageView
                 android:layout_width="30dp"
@@ -219,7 +225,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Routines"
-                android:textColor="#adadad"/>
+                android:textSize="11sp"
+                android:textColor="#999"/>
         </LinearLayout>
 
         <LinearLayout
@@ -227,7 +234,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/exercise_nav">
 
             <ImageView
                 android:layout_width="30dp"
@@ -238,7 +246,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Exercises"
-                android:textColor="#adadad"/>
+                android:textSize="11sp"
+                android:textColor="#999"/>
         </LinearLayout>
 
         <LinearLayout
@@ -246,18 +255,20 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/status_nav">
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/barchart"/>
+                android:src="@drawable/barchart_active"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Status"
-                android:textColor="#adadad"/>
+                android:textSize="11sp"
+                android:textColor="#FFF05060"/>
         </LinearLayout>
 
     </LinearLayout>
