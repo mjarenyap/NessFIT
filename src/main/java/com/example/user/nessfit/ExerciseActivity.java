@@ -13,6 +13,7 @@ public class ExerciseActivity extends AppCompatActivity {
     TextView tvexeTitle, tvexeDesc;
     Button btAddRoutine, btPlay;
     LinearLayout homeNav, routineNav, exerciseNav, statusNav;
+    DatabaseHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +24,20 @@ public class ExerciseActivity extends AppCompatActivity {
         tvexeDesc = (TextView) findViewById(R.id.tv_exeDesc);
 
         btAddRoutine = (Button) findViewById(R.id.bt_routine);
-        btPlay = (Button) findViewById(R.id.bt_play);
+        //btPlay = (Button) findViewById(R.id.bt_play);
 
         homeNav = (LinearLayout) findViewById(R.id.home_nav);
         routineNav = (LinearLayout) findViewById(R.id.routine_nav);
         exerciseNav = (LinearLayout) findViewById(R.id.exercise_nav);
         statusNav = (LinearLayout) findViewById(R.id.status_nav);
+
+        dbHelper = new DatabaseHelper(getBaseContext());
+
+        long currID = getIntent().getExtras().getLong("currID");
+        Exercise currExercise = dbHelper.getExercise(currID);
+
+        tvexeTitle.setText(currExercise.getName());
+        tvexeDesc.setText(currExercise.getDescription());
 
         homeNav.setOnClickListener(new View.OnClickListener() {
             @Override

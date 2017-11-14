@@ -24,13 +24,13 @@
             android:text="CHANGE YOUR NAME"
             android:layout_marginTop="20dp"
             android:textSize="15sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:id="@+id/change_guide"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/et_changeName"
-            />
+            android:id="@+id/et_change_text"/>
 
     </LinearLayout>
 
@@ -40,7 +40,7 @@
         android:background="@drawable/otherbutton"
         android:layout_margin="25dp"
         android:text="SAVE"
-        android:id="@+id/bt_save_changeName"
+        android:id="@+id/bt_save_change_text"
         android:textColor="#fff"/>
 
     <LinearLayout
