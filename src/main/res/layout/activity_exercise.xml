@@ -16,6 +16,30 @@
         android:orientation="vertical"
         android:layout_weight="1">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eeeeee"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/iv_photo"/>
+
+            <TextView
+                android:id="@+id/tv_addPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADD A PHOTO"
+                android:textColor="#9b9b9b"
+                android:textSize="18dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -57,12 +81,12 @@
             android:id="@+id/tv_exeDesc"
             android:text="Place your hand on the edge of the bench just beyond shoulder width apart. Hold your torso up at arms length with your toes on the floor. This is your starting position. Slowly lower yourself downward until your chest nearly touces the bench "/>
 
-
+        <!--
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:padding="30dp">
+            android:padding="15dp">
 
             <Button
                 android:layout_width="60dp"
@@ -80,7 +104,7 @@
                 android:background="@drawable/circle"
                 android:id="@+id/circle"/>
 
-        </RelativeLayout>
+        </RelativeLayout>-->
 
     </LinearLayout>
 

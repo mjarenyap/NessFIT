@@ -21,8 +21,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp">
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/bt_change_name">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -53,8 +54,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp">
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/bt_change_training_level">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -85,8 +87,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp">
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/bt_change_weight">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -117,8 +120,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp">
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/bt_change_notifications">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -149,8 +153,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp">
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/bt_change_gender">
 
             <TextView
                 android:layout_width="wrap_content"

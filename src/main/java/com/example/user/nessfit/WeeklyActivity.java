@@ -4,14 +4,13 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class WeeklyActivity extends AppCompatActivity {
 
-    TextView tvSun, tvMon, tvTues, tvWed, tvThurs, tvFri, tvSat;
-    ImageView ivSun, ivMon, ivTues, ivWed, ivThurs, ivFri, ivSat;
+    TextView countSun, countMon, countTues, countWed, countThurs, countFri, countSat;
+    LinearLayout weekSun, weekMon, weekTues, weekWed, weekThurs, weekFri, weekSat;
     LinearLayout homeNav, routineNav, exerciseNav, statusNav;
 
     @Override
@@ -19,26 +18,89 @@ public class WeeklyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weekly);
 
-        tvSun = (TextView) findViewById(R.id.tv_sun);
-        tvMon = (TextView) findViewById(R.id.tv_mon);
-        tvTues = (TextView) findViewById(R.id.tv_tues);
-        tvWed = (TextView) findViewById(R.id.tv_wed);
-        tvThurs = (TextView) findViewById(R.id.tv_thurs);
-        tvFri = (TextView) findViewById(R.id.tv_fri);
-        tvSat = (TextView) findViewById(R.id.tv_sat);
+        weekSun = (LinearLayout) findViewById(R.id.week_sun);
+        weekMon = (LinearLayout) findViewById(R.id.week_mon);
+        weekTues = (LinearLayout) findViewById(R.id.week_tues);
+        weekWed = (LinearLayout) findViewById(R.id.week_wed);
+        weekThurs = (LinearLayout) findViewById(R.id.week_thurs);
+        weekFri = (LinearLayout) findViewById(R.id.week_fri);
+        weekSat = (LinearLayout) findViewById(R.id.week_sat);
 
-        ivSun = (ImageView) findViewById(R.id.iv_sun);
-        ivMon = (ImageView) findViewById(R.id.iv_mon);
-        ivTues = (ImageView) findViewById(R.id.iv_tues);
-        ivWed = (ImageView) findViewById(R.id.iv_wed);
-        ivThurs = (ImageView) findViewById(R.id.iv_thurs);
-        ivFri = (ImageView) findViewById(R.id.iv_fri);
-        ivSat = (ImageView) findViewById(R.id.iv_sat);
+        countSun = (TextView) findViewById(R.id.count_sun);
+        countMon = (TextView) findViewById(R.id.count_mon);
+        countTues = (TextView) findViewById(R.id.count_tues);
+        countWed = (TextView) findViewById(R.id.count_wed);
+        countThurs = (TextView) findViewById(R.id.count_thurs);
+        countFri = (TextView) findViewById(R.id.count_fri);
+        countSat = (TextView) findViewById(R.id.count_sat);
 
         homeNav = (LinearLayout) findViewById(R.id.home_nav);
         routineNav = (LinearLayout) findViewById(R.id.routine_nav);
         exerciseNav = (LinearLayout) findViewById(R.id.exercise_nav);
         statusNav = (LinearLayout) findViewById(R.id.status_nav);
+
+        weekSun.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent();
+                i.setClass(getBaseContext(), AddExercise.class);
+                startActivity(i);
+            }
+        });
+
+        weekMon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent();
+                i.setClass(getBaseContext(), AddExercise.class);
+                startActivity(i);
+            }
+        });
+
+        weekTues.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent();
+                i.setClass(getBaseContext(), AddExercise.class);
+                startActivity(i);
+            }
+        });
+
+        weekWed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent();
+                i.setClass(getBaseContext(), AddExercise.class);
+                startActivity(i);
+            }
+        });
+
+        weekThurs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent();
+                i.setClass(getBaseContext(), AddExercise.class);
+                startActivity(i);
+            }
+        });
+
+        weekFri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent();
+                i.setClass(getBaseContext(), AddExercise.class);
+                startActivity(i);
+            }
+        });
+
+        weekSat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent();
+                i.setClass(getBaseContext(), AddExercise.class);
+                startActivity(i);
+            }
+        });
 
         homeNav.setOnClickListener(new View.OnClickListener() {
             @Override
