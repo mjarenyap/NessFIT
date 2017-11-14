@@ -5,69 +5,76 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="mobapde.machineproject.nessfit.NotifActivity">
+    tools:context="mobapde.machineproject.nessfit.ChangeGenderActivity">
 
-    <!--tools:context="com.example.user.nessfit.NotifActivity"-->
-    <!--tools:context="mobapde.machineproject.nessfit.NotifActivity"-->
+    <!--tools:context="com.example.user.nessfit.ChangeGenderActivity"-->
+    <!--tools:context="mobapde.machineproject.nessfit.ChangeGenderActivity"-->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_weight="1">
+        android:layout_weight="15">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="45dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_weight="1"
-                android:text="Turn on Notification"
-                android:textSize="20dp" />
-
-            <Switch
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="25dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:gravity="center">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:text="Remind me on"
-                android:textSize="18sp" />
-
-            <TimePicker
-                android:id="@+id/timePicker"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:timePickerMode="spinner"
-                >
-
-            </TimePicker>
-        </LinearLayout>
-
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="SAVE"
-            android:textColor="#fff"
-            android:background="@drawable/otherbutton"
+            android:text="CHANGE YOUR GENDER"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginTop="35dp"
             android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
             android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:id="@+id/change_to_male">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="18sp"
+                android:layout_marginLeft="25dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="25dp"
+                android:id="@+id/checkMale"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:id="@+id/change_to_female">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textSize="18sp"
+                android:layout_marginLeft="25dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="25dp"
+                android:id="@+id/checkFemale"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -160,7 +167,7 @@
                 android:layout_height="wrap_content"
                 android:text="Status"
                 android:textSize="11sp"
-                android:textColor="#FFF05060"/>
+                android:textColor="#f05060"/>
         </LinearLayout>
 
     </LinearLayout>

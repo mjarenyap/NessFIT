@@ -5,44 +5,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.user.nessfit.WeeklyActivity">
+    tools:context="mobapde.machineproject.nessfit.WeeklyActivity">
+
+    <!--tools:context="com.example.user.nessfit.WeeklyActivity"-->
+    <!--tools:context="mobapde.machineproject.nessfit.WeeklyActivity"-->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_weight="10"
-        android:layout_marginTop="40dp">
+        android:layout_marginTop="35dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:layout_marginBottom="30dp">
+            android:paddingTop="17dp"
+            android:paddingBottom="17dp"
+            android:id="@+id/week_sun">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sunday"
                 android:layout_marginLeft="20dp"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:layout_weight="2"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="6 exercises"
+                android:text="0 exercises"
                 android:textAlignment="textEnd"
+                android:gravity="end"
                 android:layout_weight="3"
                 android:textSize="15sp"
-                android:id="@+id/tv_sun"/>
+                android:id="@+id/count_sun"/>
 
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginRight="10dp"
-                android:src="@drawable/right_arrow"
-                android:id="@+id/iv_sun"/>
+                android:src="@drawable/right_arrow"/>
 
         </LinearLayout>
 
@@ -50,7 +55,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:layout_marginBottom="30dp">
+            android:paddingTop="17dp"
+            android:paddingBottom="17dp"
+            android:id="@+id/week_mon">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -58,23 +65,23 @@
                 android:text="Monday"
                 android:layout_marginLeft="20dp"
                 android:layout_weight="2"
-                android:textSize="20sp"/>
+                android:textSize="18sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3 exercises"
+                android:text="0 exercises"
                 android:textAlignment="textEnd"
+                android:gravity="end"
                 android:layout_weight="3"
                 android:textSize="15sp"
-                android:id="@+id/tv_mon"/>
+                android:id="@+id/count_mon"/>
 
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginRight="10dp"
-                android:src="@drawable/right_arrow"
-                android:id="@+id/iv_mon"/>
+                android:src="@drawable/right_arrow"/>
 
         </LinearLayout>
 
@@ -82,7 +89,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:layout_marginBottom="30dp">
+            android:paddingTop="17dp"
+            android:paddingBottom="17dp"
+            android:id="@+id/week_tues">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -90,23 +99,23 @@
                 android:text="Tuesday"
                 android:layout_marginLeft="20dp"
                 android:layout_weight="2"
-                android:textSize="20sp"/>
+                android:textSize="18sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1 exercise"
+                android:text="0 exercises"
                 android:textAlignment="textEnd"
+                android:gravity="end"
                 android:layout_weight="3"
                 android:textSize="15sp"
-                android:id="@+id/tv_tues"/>
+                android:id="@+id/count_tues"/>
 
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginRight="10dp"
-                android:src="@drawable/right_arrow"
-                android:id="@+id/iv_tues"/>
+                android:src="@drawable/right_arrow"/>
 
         </LinearLayout>
 
@@ -114,7 +123,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:layout_marginBottom="30dp">
+            android:paddingTop="17dp"
+            android:paddingBottom="17dp"
+            android:id="@+id/week_wed">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -122,23 +133,23 @@
                 android:text="Wednesday"
                 android:layout_weight="2"
                 android:layout_marginLeft="20dp"
-                android:textSize="20sp"/>
+                android:textSize="18sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="13 exercises"
+                android:text="0 exercises"
                 android:layout_weight="3"
                 android:textAlignment="textEnd"
+                android:gravity="end"
                 android:textSize="15sp"
-                android:id="@+id/tv_wed"/>
+                android:id="@+id/count_wed"/>
 
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginRight="10dp"
-                android:src="@drawable/right_arrow"
-                android:id="@+id/iv_wed"/>
+                android:src="@drawable/right_arrow"/>
 
         </LinearLayout>
 
@@ -146,7 +157,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:layout_marginBottom="30dp">
+            android:paddingTop="17dp"
+            android:paddingBottom="17dp"
+            android:id="@+id/week_thurs">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -154,23 +167,23 @@
                 android:text="Thursday"
                 android:layout_marginLeft="20dp"
                 android:layout_weight="2"
-                android:textSize="20sp"/>
+                android:textSize="18sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3 exercises"
+                android:text="0 exercises"
                 android:layout_weight="3"
                 android:textAlignment="textEnd"
+                android:gravity="end"
                 android:textSize="15sp"
-                android:id="@+id/tv_thurs"/>
+                android:id="@+id/count_thurs"/>
 
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginRight="10dp"
-                android:src="@drawable/right_arrow"
-                android:id="@+id/iv_thurs"/>
+                android:src="@drawable/right_arrow"/>
 
         </LinearLayout>
 
@@ -178,7 +191,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:layout_marginBottom="30dp">
+            android:paddingTop="17dp"
+            android:paddingBottom="17dp"
+            android:id="@+id/week_fri">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -186,23 +201,23 @@
                 android:text="Friday"
                 android:layout_marginLeft="20dp"
                 android:layout_weight="2"
-                android:textSize="20sp"/>
+                android:textSize="18sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10 exercises"
+                android:text="0 exercises"
                 android:layout_weight="3"
                 android:textAlignment="textEnd"
+                android:gravity="end"
                 android:textSize="15sp"
-                android:id="@+id/tv_fri"/>
+                android:id="@+id/count_fri"/>
 
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginRight="10dp"
-                android:src="@drawable/right_arrow"
-                android:id="@+id/iv_fri"/>
+                android:src="@drawable/right_arrow"/>
 
         </LinearLayout>
 
@@ -210,7 +225,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:layout_marginBottom="30dp">
+            android:paddingTop="17dp"
+            android:paddingBottom="17dp"
+            android:id="@+id/week_sat">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -218,23 +235,23 @@
                 android:text="Saturday"
                 android:layout_marginLeft="20dp"
                 android:layout_weight="2"
-                android:textSize="20sp"/>
+                android:textSize="18sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0 exercises "
+                android:text="0 exercises"
                 android:layout_weight="3"
                 android:textAlignment="textEnd"
+                android:gravity="end"
                 android:textSize="15sp"
-                android:id="@+id/tv_sat"/>
+                android:id="@+id/count_sat"/>
 
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginRight="10dp"
-                android:src="@drawable/right_arrow"
-                android:id="@+id/iv_sat"/>
+                android:src="@drawable/right_arrow"/>
 
         </LinearLayout>
 
@@ -253,18 +270,20 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/home_nav">
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/home_active"/>
+                android:src="@drawable/home"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Home"
-                android:textColor="#adadad"/>
+                android:textSize="11sp"
+                android:textColor="#999"/>
         </LinearLayout>
 
         <LinearLayout
@@ -272,18 +291,20 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/routine_nav">
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/routine"/>
+                android:src="@drawable/routine_active"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Routines"
-                android:textColor="#adadad"/>
+                android:textSize="11sp"
+                android:textColor="#FFF05060"/>
         </LinearLayout>
 
         <LinearLayout
@@ -291,7 +312,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/exercise_nav">
 
             <ImageView
                 android:layout_width="30dp"
@@ -302,7 +324,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Exercises"
-                android:textColor="#adadad"/>
+                android:textSize="11sp"
+                android:textColor="#999"/>
         </LinearLayout>
 
         <LinearLayout
@@ -310,7 +333,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/status_nav">
 
             <ImageView
                 android:layout_width="30dp"
@@ -321,7 +345,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Status"
-                android:textColor="#adadad"/>
+                android:textSize="11sp"
+                android:textColor="#999"/>
         </LinearLayout>
 
     </LinearLayout>

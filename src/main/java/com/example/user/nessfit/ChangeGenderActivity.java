@@ -4,42 +4,63 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
-public class ChangeTextActivity extends AppCompatActivity {
+public class ChangeGenderActivity extends AppCompatActivity {
 
+    ImageView ivMale, ivFemale;
+    LinearLayout changeMale, changeFemale;
     LinearLayout homeNav, routineNav, exerciseNav, statusNav;
-    EditText changeText;
-    TextView changeGuide;
-    Button saveChange;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_change_text);
+        setContentView(R.layout.activity_change_gender);
 
-        changeText = (EditText) findViewById(R.id.et_change_text);
-        changeGuide = (TextView) findViewById(R.id.change_guide);
-        saveChange = (Button) findViewById(R.id.bt_save_change_text);
+        ivMale = (ImageView) findViewById(R.id.checkMale);
+        ivFemale = (ImageView) findViewById(R.id.checkFemale);
+
+        changeMale = (LinearLayout) findViewById(R.id.change_to_male);
+        changeFemale = (LinearLayout) findViewById(R.id.change_to_female);
 
         homeNav = (LinearLayout) findViewById(R.id.home_nav);
         routineNav = (LinearLayout) findViewById(R.id.routine_nav);
         exerciseNav = (LinearLayout) findViewById(R.id.exercise_nav);
         statusNav = (LinearLayout) findViewById(R.id.status_nav);
 
-        changeGuide.setText(getIntent().getExtras().getString("changeGuide"));
-        changeText.setText(String.valueOf(getIntent().getExtras().getString("currStatus")));
+        String currGender = getIntent().getExtras().getString("currStatus");
+        if(currGender.equalsIgnoreCase("Male")){
+            ivMale.setImageResource(R.drawable.check_mark);
+            ivFemale.setImageResource(R.drawable.check_mark_white);
+        }
 
-        saveChange.setOnClickListener(new View.OnClickListener() {
+        else if(currGender.equalsIgnoreCase("Female")){
+            ivMale.setImageResource(R.drawable.check_mark_white);
+            ivFemale.setImageResource(R.drawable.check_mark);
+        }
+
+        changeMale.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String newInfo = changeText.getText().toString();
+                ivMale.setImageResource(R.drawable.check_mark);
+                ivFemale.setImageResource(R.drawable.check_mark_white);
+
                 Intent i = new Intent();
-                i.putExtra("currStatus", newInfo);
+                i.putExtra("currStatus", "Male");
+                setResult(RESULT_OK, i);
+                finish();
+            }
+        });
+
+        changeFemale.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ivMale.setImageResource(R.drawable.check_mark_white);
+                ivFemale.setImageResource(R.drawable.check_mark);
+
+                Intent i = new Intent();
+                i.putExtra("currStatus", "Female");
                 setResult(RESULT_OK, i);
                 finish();
             }

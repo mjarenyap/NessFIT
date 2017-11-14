@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.user.nessfit.ExerciseList">
+    tools:context="mobapde.machineproject.nessfit.ExerciseList">
+
+    <!--tools:context="com.example.user.nessfit.ExerciseList"-->
+    <!--tools:context="mobapde.machineproject.nessfit.ExerciseList"-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,12 +23,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/cardio_category">
 
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@drawable/cardio_active"/>
+                android:src="@drawable/cardio_active"
+                android:id="@+id/cardio_icon"/>
 
         </LinearLayout>
 
@@ -34,12 +39,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/arms_category">
 
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@drawable/arms"/>
+                android:src="@drawable/arms"
+                android:id="@+id/arms_icon"/>
 
         </LinearLayout>
 
@@ -48,12 +55,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/torso_category">
 
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@drawable/torso"/>
+                android:src="@drawable/torso"
+                android:id="@+id/torso_icon"/>
 
         </LinearLayout>
 
@@ -62,12 +71,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/legs_category">
 
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@drawable/legs"/>
+                android:src="@drawable/legs"
+                android:id="@+id/legs_icon"/>
 
         </LinearLayout>
 
@@ -78,11 +89,12 @@
         android:layout_height="wrap_content"
         android:layout_weight="1">
 
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rv_exercise_list">
 
-    </android.support.v7.widget.RecyclerView>
+        </android.support.v7.widget.RecyclerView>
 
     </LinearLayout>
 
@@ -99,18 +111,20 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/home_nav">
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/home_active"/>
+                android:src="@drawable/home"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Home"
-                android:textColor="#adadad"/>
+                android:textSize="11sp"
+                android:textColor="#999"/>
         </LinearLayout>
 
         <LinearLayout
@@ -118,7 +132,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/routine_nav">
 
             <ImageView
                 android:layout_width="30dp"
@@ -129,7 +144,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Routines"
-                android:textColor="#adadad"/>
+                android:textSize="11sp"
+                android:textColor="#999"/>
         </LinearLayout>
 
         <LinearLayout
@@ -137,18 +153,20 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/exercise_nav">
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/exercise"/>
+                android:src="@drawable/exercise_active"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Exercises"
-                android:textColor="#adadad"/>
+                android:textSize="11sp"
+                android:textColor="#FFF05060"/>
         </LinearLayout>
 
         <LinearLayout
@@ -156,7 +174,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/status_nav">
 
             <ImageView
                 android:layout_width="30dp"
@@ -167,7 +186,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Status"
-                android:textColor="#adadad"/>
+                android:textSize="11sp"
+                android:textColor="#999"/>
         </LinearLayout>
 
     </LinearLayout>

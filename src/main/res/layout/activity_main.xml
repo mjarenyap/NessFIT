@@ -5,205 +5,239 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.user.nessfit.MainActivity">
+    tools:context="mobapde.machineproject.nessfit.MainActivity">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+    <!--tools:context="com.example.user.nessfit.MainActivity"-->
+    <!--tools:context="mobapde.machineproject.nessfit.MainActivity"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:text="Monday, November 15, 2017"
+            android:textSize="15dp"
+            android:layout_marginTop="90dp"
+            android:textColor="#555"
+            android:id="@+id/tv_date"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Monday, November 15, 2017"
-                android:textSize="15dp"
-                android:layout_marginTop="30dp"
-                android:textColor="#000"
-                android:id="@+id/tv_date"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's Workout"
+            android:textColor="#f05060"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Today's Workout"
-                android:textColor="#f05060"
-                android:textSize="30dp"
-                android:textStyle="bold"
-                android:layout_marginTop="5dp" />
-
-        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="30"
-        android:orientation="vertical">
+        android:padding="25dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginRight="10dp"
                 android:src="@drawable/exercises" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="3"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
 
             <TextView
                 android:id="@+id/tv_exercise"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3 exercises"
-                android:textSize="22dp" />
+                android:text="exercises"
+                android:textSize="15dp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginRight="10dp"
                 android:src="@drawable/timer" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="6"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
 
             <TextView
                 android:id="@+id/tv_mins"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="6 minutes"
-                android:textSize="20dp" />
+                android:text="minutes"
+                android:textSize="15dp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginRight="10dp"
                 android:src="@drawable/scale" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="560"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
 
             <TextView
                 android:id="@+id/tv_calories"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="560 calories"
-                android:textSize="20dp" />
+                android:text="burned calories"
+                android:textSize="15dp" />
 
         </LinearLayout>
 
     </LinearLayout>
 
     <Button
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@drawable/otherbutton"
-            android:text="Start"
-            android:textColor="#fff"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginBottom="20dp"
-            android:layout_weight="1"
-            android:textSize="20sp"
-            android:id="@+id/bt_start"/>
-    
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/otherbutton"
+        android:text="Start"
+        android:textColor="#fff"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:id="@+id/bt_start"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp"
+        android:background="#f0f0f0">
+
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:gravity="center"
-            android:padding="5dp"
-            android:background="#f0f0f0">
-            
-            <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/home_nav">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/home_active"/>
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/home_active"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Home"
-                    android:textColor="#adadad"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/routine"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Routines"
-                    android:textColor="#adadad"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/exercise"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Exercises"
-                    android:textColor="#adadad"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/barchart"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Status"
-                    android:textColor="#adadad"/>
-            </LinearLayout>
-
+                android:text="Home"
+                android:textSize="11sp"
+                android:textColor="#f05060"/>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/routine_nav">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/routine"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Routines"
+                android:textSize="11sp"
+                android:textColor="#999"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/exercise_nav">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/exercise"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exercises"
+                android:textSize="11sp"
+                android:textColor="#999"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/status_nav">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/barchart"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textSize="11sp"
+                android:textColor="#999"/>
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
